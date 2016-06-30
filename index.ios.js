@@ -16,16 +16,21 @@ class foodhacks extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <View style={styles.header}>
+          <Text>
+            FOOD HACKS
+          </Text>
+        </View>
+        <View style={styles.main}>
+          <Text>
+            Main
+          </Text>
+        </View>
+        <View style={styles.footer}>
+          <Text>
+            Footer
+          </Text>
+        </View>
       </View>
     );
   }
@@ -38,16 +43,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  header: {
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  main: {
+    flex:3,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
+  footer: {
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
 });
 
 AppRegistry.registerComponent('foodhacks', () => foodhacks);
